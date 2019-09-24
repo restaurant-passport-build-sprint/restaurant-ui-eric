@@ -160,6 +160,9 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+.container {
+  width: 100%;
+}
 nav {
   width: 100%;
   font-size: 2rem;
@@ -184,16 +187,109 @@ nav a {
 nav a:hover {
   background: grey;
 }
-.welcome {
+img {
+  width: 100%;
+}
+footer {
+  width: 100%;
   display: flex;
-  width: 45%;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+  padding: 10px;
+  background: #DAA520;
+}
+#top-content {
+  width: 100%;
+  display: flex;
+  border: 2px solid blue;
+}
+@media (max-width: 500px) {
+  #top-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}
+#top-content .welcome {
+  width: 48%;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
 }
-.welcome h1 {
+@media (max-width: 500px) {
+  #top-content .welcome {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}
+#top-content .welcome h1 {
   font-size: 3rem;
 }
-img {
-  width: 40%;
+#top-content .image-content {
+  width: 48%;
+}
+#middle-content {
+  width: 100%;
+  flex-direction: row-reverse;
+  display: flex;
+  border: 2px solid blue;
+}
+@media (max-width: 500px) {
+  #middle-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}
+#middle-content .middle {
+  width: 48%;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 500px) {
+  #middle-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}
+#middle-content .middle-image {
+  width: 48%;
+}
+#bottom-content {
+  width: 100%;
+  display: flex;
+  border: 2px solid blue;
+}
+@media (max-width: 500px) {
+  #bottom-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}
+#bottom-content .bottom {
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 500px) {
+  #bottom-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}
+#bottom-content .bottom-image {
+  width: 48%;
 }
