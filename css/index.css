@@ -182,3 +182,16 @@ nav a {
 nav a:hover {
   background: grey;
 }
+.welcome {
+  display: flex;
+  width: 45%;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+.welcome h1 {
+  font-size: 3rem;
+}
+img {
+  width: 40%;
+}
