@@ -132,9 +132,8 @@ table {
 html {
   font-size: 62.5%;
 }
-html,
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Libre Baskerville', serif;
 }
 h1,
 h2,
@@ -148,30 +147,32 @@ h3,
 h4,
 h5 {
   font-size: 2.5rem;
-  font-family: Libre Baskerville, serif;
+}
+h1 {
+  font-size: 4rem;
 }
 p {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   line-height: 1.4;
-  font-family: Libre Baskerville, serif;
 }
 .container {
-  max-width: 1000px;
+  max-width: 100%;
   width: 100%;
   margin: 0 auto;
 }
 .container {
   width: 100%;
 }
-nav {
+.container nav {
   width: 100%;
   font-size: 2rem;
   display: flex;
   justify-content: flex-end;
+  align-items: space-between;
   background: #8B0000;
 }
 @media (max-width: 500px) {
-  nav {
+  .container nav {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -179,16 +180,13 @@ nav {
     align-items: center;
   }
 }
-nav a {
+.container nav a {
   text-decoration: none;
   color: #F5DEB3;
   padding: 10px;
 }
-nav a:hover {
+.container nav a:hover {
   background: grey;
-}
-img {
-  width: 100%;
 }
 footer {
   width: 100%;
@@ -198,98 +196,122 @@ footer {
   align-items: center;
   margin: 20px auto;
   padding: 10px;
-  background: #DAA520;
+  background: #6B8E23;
 }
-#top-content {
+.home {
+  display: flex;
+  flex-direction: column;
+  background: #808000;
+}
+.home .top {
+  background-image: url(/img/nycrestaurant.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+.home .top h1,
+.home .top h2 {
+  color: white;
+}
+.home #top-content {
   width: 100%;
   display: flex;
-  border: 2px solid blue;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 15px;
+  padding-right: 0;
 }
 @media (max-width: 500px) {
-  #top-content {
+  .home #top-content {
     width: 100%;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
   }
 }
-#top-content .welcome {
-  width: 48%;
+.home #top-content .welcome {
+  width: 45%;
+  display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  padding: 4px;
+  padding-left: 0;
 }
 @media (max-width: 500px) {
-  #top-content .welcome {
+  .home #top-content .welcome {
     width: 100%;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
   }
 }
-#top-content .welcome h1 {
-  font-size: 3rem;
+.home #top-content .img-content {
+  width: 55%;
+  display: flex;
+  justify-content: center;
+  padding: 15px;
 }
-#top-content .image-content {
-  width: 48%;
-}
-#middle-content {
+.home #middle-content {
   width: 100%;
   flex-direction: row-reverse;
   display: flex;
-  border: 2px solid blue;
+  justify-content: flex-start;
 }
 @media (max-width: 500px) {
-  #middle-content {
+  .home #middle-content {
     width: 100%;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
   }
 }
-#middle-content .middle {
-  width: 48%;
+.home #middle-content .middle {
+  width: 55%;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  padding: 20px;
 }
 @media (max-width: 500px) {
-  #middle-content {
+  .home #middle-content {
     width: 100%;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
   }
 }
-#middle-content .middle-image {
-  width: 48%;
+.home #middle-content .middle-img {
+  width: 44%;
+  display: flex;
+  align-items: flex-start;
 }
-#bottom-content {
+.home #bottom-content {
   width: 100%;
   display: flex;
-  border: 2px solid blue;
 }
 @media (max-width: 500px) {
-  #bottom-content {
+  .home #bottom-content {
     width: 100%;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
   }
 }
-#bottom-content .bottom {
+.home #bottom-content .bottom {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
 @media (max-width: 500px) {
-  #bottom-content {
+  .home #bottom-content {
     width: 100%;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
   }
 }
-#bottom-content .bottom-image {
-  width: 48%;
+.home #bottom-content .bottom-img {
+  width: 40%;
+  display: flex;
 }
