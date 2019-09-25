@@ -211,6 +211,11 @@ footer {
   flex-direction: column;
   background: #39491c;
 }
+@media (max-width: 100px) {
+  .home {
+    width: 100%;
+  }
+}
 .home .top {
   background-image: url(/img/nycrestaurant.jpg);
   background-size: cover;
@@ -274,6 +279,12 @@ footer {
     flex-direction: column;
     flex-wrap: wrap;
   }
+  .home #top-content .welcome h1 {
+    padding: 10px;
+  }
+  .home #top-content .welcome p {
+    padding: 10px;
+  }
 }
 .home #top-content .img-content {
   width: 55%;
@@ -288,7 +299,7 @@ footer {
 }
 @media (max-width: 500px) {
   .home #top-content .img-content {
-    width: 100%;
+    width: 98%;
   }
 }
 .home #middle-content {
@@ -300,13 +311,16 @@ footer {
 @media (max-width: 800px) {
   .home #middle-content {
     width: 94%;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column-reverse;
   }
 }
 @media (max-width: 500px) {
   .home #middle-content {
     width: 100%;
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     flex-wrap: wrap;
     margin: 0;
     padding: 0;
@@ -323,6 +337,10 @@ footer {
 @media (max-width: 800px) {
   .home #middle-content .middle {
     width: 90%;
+    margin: 20px;
+  }
+  .home #middle-content .middle h2 {
+    padding: 30px;
   }
 }
 @media (max-width: 500px) {
@@ -333,6 +351,9 @@ footer {
     flex-wrap: wrap;
     margin: 0;
     padding: 0;
+  }
+  .home #middle-content .middle p {
+    padding: 20px;
   }
 }
 .home #middle-content .middle-img {
@@ -348,7 +369,8 @@ footer {
 }
 @media (max-width: 500px) {
   .home #middle-content .middle-img {
-    width: 98%;
+    width: 95%;
+    padding: 10px;
   }
 }
 .home #bottom-content {
@@ -358,14 +380,16 @@ footer {
 @media (max-width: 800px) {
   .home #bottom-content {
     width: 94%;
-    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column-reverse;
   }
 }
 @media (max-width: 500px) {
   .home #bottom-content {
     width: 100%;
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     flex-wrap: wrap;
   }
 }
@@ -380,6 +404,10 @@ footer {
 @media (max-width: 800px) {
   .home #bottom-content .bottom {
     width: 95%;
+    flex-wrap: wrap;
+  }
+  .home #bottom-content .bottom h2 {
+    padding: 30px;
   }
 }
 @media (max-width: 500px) {
@@ -391,6 +419,9 @@ footer {
     padding: 0;
     padding-top: 10px;
   }
+  .home #bottom-content .bottom p {
+    padding: 20px;
+  }
 }
 .home #bottom-content .btn {
   width: 30%;
@@ -401,7 +432,7 @@ footer {
   background: #808000;
   font-size: 2rem;
   border-radius: 10px;
-  margin: 0;
+  margin: 30px;
   cursor: pointer;
   height: 45px;
   color: #F5DEB3;
@@ -424,10 +455,9 @@ footer {
 }
 @media (max-width: 500px) {
   .home #bottom-content .bottom-img {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    padding-top: 10px;
+    width: 95%;
+    padding: 10px;
+    margin-top: 20px;
   }
 }
 .home1 {
@@ -442,6 +472,11 @@ footer {
   justify-content: center;
   justify-content: space-evenly;
   align-items: center;
+}
+@media (max-width: 500px) {
+  .home1 .mid-content {
+    width: 100%;
+  }
 }
 .home1 .mid-content .boxes {
   width: 96%;
@@ -460,6 +495,10 @@ footer {
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
+}
+.home1 .mid-content .boxes .box h2,
+.home1 .mid-content .boxes .box h5 {
+  text-align: center;
 }
 .home1 .mid-content .boxes .box img {
   width: 45%;
