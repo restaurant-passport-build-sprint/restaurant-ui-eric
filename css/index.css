@@ -171,6 +171,11 @@ p {
   align-items: space-between;
   background: #8B0000;
 }
+@media (max-width: 800px) {
+  .container nav {
+    width: 100%;
+  }
+}
 @media (max-width: 500px) {
   .container nav {
     width: 100%;
@@ -230,6 +235,11 @@ footer {
   padding-left: 15px;
   padding-right: 0;
 }
+@media (max-width: 800px) {
+  .home #top-content {
+    width: 100%;
+  }
+}
 @media (max-width: 500px) {
   .home #top-content {
     width: 100%;
@@ -247,6 +257,11 @@ footer {
   padding: 4px;
   padding-left: 0;
 }
+@media (max-width: 800px) {
+  .home #top-content .welcome {
+    width: 100%;
+  }
+}
 @media (max-width: 500px) {
   .home #top-content .welcome {
     width: 100%;
@@ -261,6 +276,11 @@ footer {
   justify-content: center;
   padding: 15px;
 }
+@media (max-width: 800px) {
+  .home #top-content .img-content {
+    width: 100%;
+  }
+}
 @media (max-width: 500px) {
   .home #top-content .img-content {
     width: 100%;
@@ -271,6 +291,11 @@ footer {
   flex-direction: row-reverse;
   display: flex;
   justify-content: flex-start;
+}
+@media (max-width: 800px) {
+  .home #middle-content {
+    width: 100%;
+  }
 }
 @media (max-width: 500px) {
   .home #middle-content {
@@ -290,6 +315,11 @@ footer {
   padding: 20px;
   margin: 24px;
 }
+@media (max-width: 800px) {
+  .home #middle-content .middle {
+    width: 100%;
+  }
+}
 @media (max-width: 500px) {
   .home #middle-content .middle {
     width: 100%;
@@ -306,6 +336,11 @@ footer {
   padding-left: 10px;
   align-items: flex-start;
 }
+@media (max-width: 800px) {
+  .home #middle-content .middle-img {
+    width: 100%;
+  }
+}
 @media (max-width: 500px) {
   .home #middle-content .middle-img {
     width: 98%;
@@ -314,6 +349,11 @@ footer {
 .home #bottom-content {
   width: 100%;
   display: flex;
+}
+@media (max-width: 800px) {
+  .home #bottom-content {
+    width: 100%;
+  }
 }
 @media (max-width: 500px) {
   .home #bottom-content {
@@ -340,6 +380,24 @@ footer {
     padding: 0;
     padding-top: 10px;
   }
+}
+.home #bottom-content .btn {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: green;
+  font-size: 2rem;
+  border-radius: 10px;
+  margin: 0;
+  cursor: pointer;
+  height: 45px;
+  color: white;
+}
+.home #bottom-content .btn:hover {
+  background-color: #ffff1a;
+  color: red;
 }
 .home #bottom-content .bottom-img {
   width: 50%;
