@@ -209,7 +209,7 @@ footer {
 .home {
   display: flex;
   flex-direction: column;
-  background: #39491c;
+  background: #39491C;
 }
 @media (max-width: 100px) {
   .home {
@@ -423,7 +423,7 @@ footer {
     padding: 20px;
   }
 }
-.home #bottom-content .btn {
+.home #bottom-content button {
   width: 30%;
   display: flex;
   flex-direction: column;
@@ -437,7 +437,7 @@ footer {
   height: 45px;
   color: #F5DEB3;
 }
-.home #bottom-content .btn:hover {
+.home #bottom-content button:hover {
   background-color: #a4d247;
   color: black;
 }
