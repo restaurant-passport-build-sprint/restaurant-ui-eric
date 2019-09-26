@@ -1,7 +1,7 @@
 .home {
   display: flex;
   flex-direction: column;
-  background: #39491c;
+  background: #39491C;
 
   @media @desktop {
     width: 100%;
@@ -21,7 +21,7 @@
       bottom: 0;
       background: rgb(0, 0, 0);
       background: rgba(0, 0, 0, 0.5);
-      color: #F5DEB3;
+      color: @text-color;
       width: 100%;
       padding: 20px;
 
@@ -29,7 +29,7 @@
 
     h1,
     h2 {
-      color: #F5DEB3;
+      color: @text-color;
     }
   }
 
@@ -49,9 +49,7 @@
 
     @media @phone {
       width: 100%;
-      display: flex;
-      flex-direction: column;
-      flex-wrap: wrap;
+      .phone();
     }
 
     .welcome {
@@ -70,9 +68,7 @@
 
       @media @phone {
         width: 100%;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
+        .phone();
 
         h1 {
           padding: 10px;
@@ -148,9 +144,7 @@
 
       @media @phone {
         width: 100%;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
+        .phone();
         margin: 0;
         padding: 0;
 
@@ -231,7 +225,7 @@
       }
     }
 
-    .btn {
+    button {
       width: 30%;
       .flexbox();
       background: #808000;
@@ -240,7 +234,7 @@
       margin: 30px;
       cursor: pointer;
       height: 45px;
-      color: #F5DEB3;
+      color: @text-color;
 
       &:hover {
         background-color: lighten(#9ACD32, 5%);
