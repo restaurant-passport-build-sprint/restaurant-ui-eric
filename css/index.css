@@ -394,12 +394,12 @@ footer {
   }
 }
 .home #bottom-content .bottom {
-  width: 45%;
+  width: 48%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  padding: 60px;
+  padding: 50px;
 }
 @media (max-width: 800px) {
   .home #bottom-content .bottom {
@@ -441,7 +441,7 @@ footer {
   background-color: #a4d247;
   color: black;
 }
-.home #bottom-content button a {
+.home #bottom-content a {
   text-decoration: none;
 }
 .home #bottom-content .bottom-img {
